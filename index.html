@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Life Specialist Hospital | World-Class Care in Jos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Animation on Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            /* Removed placeholder and set a professional teal gradient */
+            background-image: linear-gradient(45deg, #14b8a6, #0d9488);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .doctor-card:hover .doctor-image {
+            transform: scale(1.1);
+        }
+        /* Style for active navigation link */
+        .nav-active {
+            color: #14b8a6; /* teal-500 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header Section -->
+    <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-800">
+                Zenith<span class="text-teal-500">Life</span> Hospital
+            </a>
+            <div class="hidden lg:flex items-center space-x-8" id="nav-links">
+                <a href="#home" class="text-slate-600 hover:text-teal-500 transition duration-300">Home</a>
+                <a href="#about" class="text-slate-600 hover:text-teal-500 transition duration-300">About Us</a>
+                <a href="#services" class="text-slate-600 hover:text-teal-500 transition duration-300">Services</a>
+                <a href="#doctors" class="text-slate-600 hover:text-teal-500 transition duration-300">Find a Doctor</a>
+                <a href="#contact" class="text-slate-600 hover:text-teal-500 transition duration-300">Contact</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-4">
+                 <a href="tel:09138982540" class="flex items-center space-x-2 bg-red-100 text-red-600 font-semibold px-4 py-2 rounded-lg hover:bg-red-200 transition">
+                    <i data-lucide="phone"></i>
+                    <span>EMERGENCY: 09138982540</span>
+                </a>
+                <a href="#contact" class="bg-teal-500 text-white font-semibold px-5 py-2 rounded-lg shadow-sm hover:bg-teal-600 cta-button">Book Appointment</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="menu-btn" class="text-slate-800 focus:outline-none">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white">
+            <a href="#home" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Home</a>
+            <a href="#about" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">About Us</a>
+            <a href="#services" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Services</a>
+            <a href="#doctors" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Find a Doctor</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Contact</a>
+             <div class="px-6 py-4">
+                <a href="#contact" class="block text-center w-full bg-teal-500 text-white font-semibold px-5 py-2 rounded-lg shadow-sm hover:bg-teal-600">Book Appointment</a>
+            </div>
+            <div class="px-6 pb-4">
+                <a href="tel:09138982540" class="block text-center w-full bg-red-100 text-red-600 font-semibold px-4 py-2 rounded-lg">
+                    EMERGENCY: 09138982540
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg pt-32 pb-20 md:pt-48 md:pb-32 text-white text-center">
+            <div class="container mx-auto px-6" data-aos="fade-in" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Your Health is Our Highest Priority.</h1>
+                <p class="text-lg md:text-xl text-slate-200 max-w-3xl mx-auto mb-8">Compassionate, world-class medical care right here in Jos. We combine expertise with a healing touch.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#doctors" class="bg-teal-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-teal-600 cta-button text-lg">Find a Doctor</a>
+                    <a href="#services" class="bg-white text-slate-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-slate-200 cta-button text-lg">Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="about" class="py-20 bg-white overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">The Zenith Life Standard of Care</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">Discover the difference that dedicated, patient-first healthcare can make.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="bg-slate-50 p-8 rounded-lg text-center shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center justify-center h-16 w-16 bg-teal-100 text-teal-500 rounded-full mx-auto mb-6">
+                            <i data-lucide="users-2" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Expert Medical Team</h3>
+                        <p class="text-slate-600">Our specialists are leaders in their fields, dedicated to providing you with the best possible outcomes.</p>
+                    </div>
+                    <!-- Feature Card 2 -->
+                    <div class="bg-slate-50 p-8 rounded-lg text-center shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center justify-center h-16 w-16 bg-teal-100 text-teal-500 rounded-full mx-auto mb-6">
+                            <i data-lucide="microscope" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Advanced Technology</h3>
+                        <p class="text-slate-600">We invest in state-of-the-art diagnostic and treatment technology to ensure accurate and effective care.</p>
+                    </div>
+                    <!-- Feature Card 3 -->
+                    <div class="bg-slate-50 p-8 rounded-lg text-center shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center justify-center h-16 w-16 bg-teal-100 text-teal-500 rounded-full mx-auto mb-6">
+                            <i data-lucide="heart-handshake" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Patient-Centered Care</h3>
+                        <p class="text-slate-600">You are at the heart of everything we do. We listen, we care, and we support you on your health journey.</p>
+                    </div>
+                    <!-- Feature Card 4 -->
+                    <div class="bg-slate-50 p-8 rounded-lg text-center shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex items-center justify-center h-16 w-16 bg-teal-100 text-teal-500 rounded-full mx-auto mb-6">
+                            <i data-lucide="siren" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">24/7 Emergency Services</h3>
+                        <p class="text-slate-600">Our emergency department is always open and ready to provide immediate, life-saving care.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="py-20 bg-slate-50 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Our Medical Services</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">Comprehensive care for every stage of life, delivered with expertise and compassion.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center justify-center h-20 w-20 bg-teal-500 text-white rounded-full mx-auto mb-6">
+                            <i data-lucide="stethoscope" class="h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">General Medicine</h3>
+                        <p class="text-slate-600 mb-4">Primary care, wellness checks, and management of chronic conditions for adults.</p>
+                        <a href="#" class="font-semibold text-teal-500 hover:text-teal-600">Learn More &rarr;</a>
+                    </div>
+                     <!-- Service Card -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center justify-center h-20 w-20 bg-teal-500 text-white rounded-full mx-auto mb-6">
+                            <i data-lucide="baby" class="h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Maternity Care</h3>
+                        <p class="text-slate-600 mb-4">Complete prenatal, delivery, and postnatal care for a safe and healthy journey to motherhood.</p>
+                        <a href="#" class="font-semibold text-teal-500 hover:text-teal-600">Learn More &rarr;</a>
+                    </div>
+                     <!-- Service Card -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center justify-center h-20 w-20 bg-teal-500 text-white rounded-full mx-auto mb-6">
+                            <i data-lucide="scissors" class="h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Surgical Services</h3>
+                        <p class="text-slate-600 mb-4">Advanced surgical procedures performed by our team of experienced surgeons.</p>
+                        <a href="#" class="font-semibold text-teal-500 hover:text-teal-600">Learn More &rarr;</a>
+                    </div>
+                     <!-- Service Card -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center justify-center h-20 w-20 bg-teal-500 text-white rounded-full mx-auto mb-6">
+                            <i data-lucide="flask-conical" class="h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Diagnostics & Lab</h3>
+                        <p class="text-slate-600 mb-4">Accurate and rapid results from our modern laboratory and imaging center.</p>
+                        <a href="#" class="font-semibold text-teal-500 hover:text-teal-600">Learn More &rarr;</a>
+                    </div>
+                     <!-- Service Card -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center justify-center h-20 w-20 bg-teal-500 text-white rounded-full mx-auto mb-6">
+                            <i data-lucide="activity" class="h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Cardiology</h3>
+                        <p class="text-slate-600 mb-4">Specialized care for heart conditions, from prevention to advanced treatment.</p>
+                        <a href="#" class="font-semibold text-teal-500 hover:text-teal-600">Learn More &rarr;</a>
+                    </div>
+                     <!-- Service Card -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center justify-center h-20 w-20 bg-teal-500 text-white rounded-full mx-auto mb-6">
+                            <i data-lucide="person-standing" class="h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Pediatrics</h3>
+                        <p class="text-slate-600 mb-4">Compassionate and comprehensive medical care for infants, children, and adolescents.</p>
+                        <a href="#" class="font-semibold text-teal-500 hover:text-teal-600">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Specialists Section -->
+        <section id="doctors" class="py-20 bg-white overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Meet Our Specialists</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">The dedicated experts who put your health first.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Doctor Card -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden text-center group doctor-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="overflow-hidden h-64">
+                            <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Dr.+Ada" alt="Doctor Ada" class="w-full h-full object-cover transition-transform duration-300 doctor-image">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">Dr. Adaeze Okoro</h3>
+                            <p class="text-teal-500 font-semibold">Lead Pediatrician</p>
+                            <a href="#" class="mt-4 inline-block bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-slate-200 transition">View Profile</a>
+                        </div>
+                    </div>
+                    <!-- Doctor Card -->
+                     <div class="bg-white rounded-lg shadow-md overflow-hidden text-center group doctor-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="overflow-hidden h-64">
+                            <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Dr.+Musa" alt="Doctor Musa" class="w-full h-full object-cover transition-transform duration-300 doctor-image">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">Dr. Ibrahim Musa</h3>
+                            <p class="text-teal-500 font-semibold">Senior Cardiologist</p>
+                            <a href="#" class="mt-4 inline-block bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-slate-200 transition">View Profile</a>
+                        </div>
+                    </div>
+                    <!-- Doctor Card -->
+                     <div class="bg-white rounded-lg shadow-md overflow-hidden text-center group doctor-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="overflow-hidden h-64">
+                            <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Dr.+Funke" alt="Doctor Funke" class="w-full h-full object-cover transition-transform duration-300 doctor-image">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">Dr. Funke Adebayo</h3>
+                            <p class="text-teal-500 font-semibold">Head of General Surgery</p>
+                            <a href="#" class="mt-4 inline-block bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-slate-200 transition">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="text-center mt-12" data-aos="fade-up">
+                     <a href="#" class="bg-teal-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-teal-600 cta-button text-lg">View All Doctors</a>
+                 </div>
+            </div>
+        </section>
+        
+        <!-- Contact & Appointment Section -->
+        <section id="contact" class="py-20 bg-teal-50 overflow-hidden">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Book an Appointment</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">We're here to help. Reach out to us today or use the form to schedule your visit.</p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <!-- Contact Info -->
+                    <div class="lg:w-1/3" data-aos="fade-right">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="map-pin" class="text-teal-500 mt-1 flex-shrink-0 h-6 w-6"></i>
+                                <div>
+                                    <h4 class="font-semibold">Our Location</h4>
+                                    <p class="text-slate-600">Jos, Plateau State, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="phone" class="text-teal-500 mt-1 flex-shrink-0 h-6 w-6"></i>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="text-slate-600">Appointments & Inquiries: 09138982540</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="mail" class="text-teal-500 mt-1 flex-shrink-0 h-6 w-6"></i>
+                                 <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-slate-600">zenithlife2021@gmail.com</p>
+                                </div>
+                            </div>
+                             <div class="flex items-start space-x-4">
+                                <i data-lucide="clock" class="text-teal-500 mt-1 flex-shrink-0 h-6 w-6"></i>
+                                <div>
+                                    <h4 class="font-semibold">Hours</h4>
+                                    <p class="text-slate-600">
+                                        <span class="font-semibold text-green-600">Open 24/7 for Emergencies</span><br>
+                                        Specialist consultations by appointment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Appointment Form -->
+                    <div class="lg:w-2/3 bg-white p-8 rounded-lg shadow-lg" data-aos="fade-left">
+                         <form action="#" method="POST">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
+                                    <input type="text" id="name" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-teal-500 focus:ring-teal-500" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-slate-700">Phone Number</label>
+                                    <input type="tel" id="phone" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-teal-500 focus:ring-teal-500" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-slate-700">Email Address</label>
+                                    <input type="email" id="email" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-teal-500 focus:ring-teal-500">
+                                </div>
+                                <div>
+                                    <label for="service" class="block text-sm font-medium text-slate-700">Service Required</label>
+                                    <select id="service" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-teal-500 focus:ring-teal-500">
+                                        <option>General Consultation</option>
+                                        <option>Maternity Check-up</option>
+                                        <option>Surgical Consultation</option>
+                                        <option>Cardiology</option>
+                                        <option>Pediatrics</option>
+                                    </select>
+                                </div>
+                                <div class="md:col-span-2">
+                                     <label for="date" class="block text-sm font-medium text-slate-700">Preferred Date</label>
+                                     <input type="date" id="date" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-teal-500 focus:ring-teal-500" required>
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label for="message" class="block text-sm font-medium text-slate-700">Additional Message (Optional)</label>
+                                    <textarea id="message" rows="4" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-teal-500 focus:ring-teal-500"></textarea>
+                                </div>
+                            </div>
+                            <div class="mt-6 text-right">
+                                <button type="submit" class="bg-teal-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-teal-600 cta-button">Submit Request</button>
+                            </div>
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4">Zenith<span class="text-teal-400">Life</span> Hospital</h3>
+                    <p class="text-slate-300 max-w-md">Providing exceptional healthcare with a commitment to compassion, innovation, and excellence for the Jos community and beyond.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-slate-300 hover:text-teal-400">About Us</a></li>
+                        <li><a href="#services" class="text-slate-300 hover:text-teal-400">Our Services</a></li>
+                        <li><a href="#doctors" class="text-slate-300 hover:text-teal-400">Find a Doctor</a></li>
+                        <li><a href="#contact" class="text-slate-300 hover:text-teal-400">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li>Jos, Plateau State</li>
+                        <li>09138982540</li>
+                        <li>zenithlife2021@gmail.com</li>
+                    </ul>
+                     <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-slate-300 hover:text-teal-400"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="text-slate-300 hover:text-teal-400"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="text-slate-300 hover:text-teal-400"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-slate-700 pt-6 text-center text-slate-400 text-sm">
+                <p>&copy; 2024 Zenith Life Specialist Hospital. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animation on Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Initialize Animate on Scroll
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLi = document.querySelectorAll('#nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLi.forEach(a => {
+                a.classList.remove('nav-active');
+                if (a.getAttribute('href') == '#' + current) {
+                    a.classList.add('nav-active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
